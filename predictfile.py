@@ -8,7 +8,7 @@ import keras, sys
 import numpy as np
 from PIL import Image
 
-classes = ["monkey", "boar", "crow"]
+classes = ["サル", "イノシシ", "カラス"]
 num_classes = len(classes)
 image_size = 50
 
@@ -56,7 +56,6 @@ def upload_file():
             # return render_tempate('answer.html', **locals())
             classespre= classes[predicted]
             strper= str(percentage)
-            # return render_template('answer.html', classespre=classespre, strper=strper)
             # return "ラベル：" + classes[predicted] + ", 確率：" + str(percentage) + " %"
             return render_template('answer.html', **locals())
 
