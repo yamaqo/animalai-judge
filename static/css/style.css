@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+div {
+	background-image: url('/static/image/backimage.png');
+}
+
+h1 {
+  text-align: center;
+}
